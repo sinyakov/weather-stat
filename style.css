@@ -89,3 +89,11 @@ body {
 .canvas {
   background: #fff;
 }
+
+.error {
+  padding: 15px;
+}
+
+.invisible {
+  display: none;
+}
