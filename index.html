@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Архив метеослужбы</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class="main-header">
+      <h1 class="title">Архив метеослужбы 🌦</h1>
+      <div class="selectors">
+        <div class="datatype">
+          <label class="datatype__label">
+            <input class="datatype__input" type="radio" name="graphType" id="temperature" value="temperature"> 🌡️ Температура
+          </label>
+          <label class="datatype__label">
+            <input class="datatype__input" type="radio" name="graphType" id="precipitation" value="precipitation"> ☂️ Осадки
+          </label>
+        </div>
+        <div class="interval">
+          <select name="start" id="start" class="interval__select">
+            <option disabled selected>Начало</option>
+          </select>
+          <select name="end" id="end" class="interval__select">
+            <option disabled selected>Конец</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <canvas class="canvas" id="graph" width="300" height="300"></canvas>
+  </div>
+</body>
+
+</html>
